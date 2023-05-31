@@ -1,0 +1,410 @@
+{
+    "title": "Credit Risk Evaluation",
+    "titleEs": "Evaluacion de riesgo",
+    "type": "object",
+    "properties": {
+        "APPLICATION_SUBMISSION_TYPE": {
+            "type": "options",
+            "title": "Submission Type",
+            "titleEs": "Tipo de Submission",
+            "enum": [
+                "Web",
+                "Carga"
+            ],
+            "enumFace": [
+                "Web",
+                "Carga"
+            ],
+            "enumFaceEs": [
+                "Web",
+                "Carga"
+            ]
+        },
+        "QUANT_ADDITIONAL_CARDS": {
+            "type": "options",
+            "title": "Quantity of Additional Cards",
+            "titleEs": "Cantidad de Tarjetas Adicionales",
+            "enum": [
+                1,
+                2,
+                null
+            ],
+            "enumFace": [
+                "1",
+                "2",
+                "NULL"
+            ],
+            "enumFaceEs": [
+                "1",
+                "2",
+                "NULL"
+            ]
+        },
+        "POSTAL_ADDRESS_TYPE": {
+            "type": "options",
+            "title": "Postal Address Type",
+            "titleEs": "Tipo de Dirección Postal",
+            "enum": [
+                "1",
+                "2"
+            ],
+            "enumFace": [
+                "1",
+                "2"
+            ],
+            "enumFaceEs": [
+                "1",
+                "2"
+            ]
+        },
+        "SEX": {
+            "type": "options",
+            "title": "Gender",
+            "titleEs": "Género",
+            "enum": [
+                "M",
+                "F",
+                "N"
+            ],
+            "enumFace": [
+                "Male",
+                "Female",
+                "Non Binary"
+            ],
+            "enumFaceEs": [
+                "Hombre",
+                "Mujer",
+                "No Binarie"
+            ]
+        },
+        "MARITAL_STATUS": {
+            "type": "options",
+            "title": "Marital Status",
+            "titleEs": "Estado Civil",
+            "enum": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7
+            ],
+            "enumFace": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7
+            ],
+            "enumFaceEs": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7
+            ]
+        },
+        "QUANT_DEPENDANTS": {
+            "type": "number",
+            "title": "Quantity of Dependents",
+            "titleEs": "Cantidad de Dependientes"  
+        },
+        "EDUCATION_LEVEL": {
+            "type": "options",
+            "title": "Education Level",
+            "titleEs": "Nivel de Educación",
+            "enum": [
+                1,
+                2,
+                3,
+                4,
+                5
+            ],
+            "enumFace": [
+                1,
+                2,
+                3,
+                4,
+                5
+            ],
+            "enumFaceEs": [
+                1,
+                2,
+                3,
+                4,
+                5
+            ]
+        },
+          "NACIONALITY": {
+            "type": "options",
+            "title": "Nationality",
+            "titleEs": "Nacionalidad",
+            "enum": [0, 1, 2],
+            "enumFace": [0, 1, 2],
+            "enumFaceEs": [0, 1, 2]
+          },
+          "FLAG_RESIDENCIAL_PHONE": {
+            "type": "options",
+            "title": "Has Residential Phone",
+            "titleEs": "Tiene Teléfono Residencial",
+            "enum": ["Y", "N"],
+            "enumFace": ["Yes", "No"],
+            "enumFaceEs": ["Si", "No"]
+          },
+          "RESIDENCE_TYPE": {
+            "type": "options",
+            "title": "Residence Type",
+            "titleEs": "Tipo de Residencia",
+            "enum": ["NULL",1, 2, 3, 4, 5],
+            "enumFace": ["NULL", "1", "2", "3", "4", "5"],
+            "enumFaceEs": ["NULL", "1", "2", "3", "4", "5"]
+          },
+          "MONTHS_IN_RESIDENCE": {
+            "type": "number",
+            "title": "Months in Residence",
+            "titleEs": "Meses de Residencia"
+          },
+          "FLAG_EMAIL": {
+            "type": "options",
+            "title": "Has Email",
+            "titleEs": "Tiene Correo Electrónico",
+            "enum": [0, 1],
+            "enumFace": ["Yes", "No"],
+            "enumFaceEs": ["Si", "No"]
+          },
+          "PERSONAL_MONTHLY_INCOME": {
+            "type": "number",
+            "title": "Personal Monthly Income",
+            "titleEs": "Ingreso Mensual Personal"
+          },
+          "OTHER_INCOMES": {
+            "type": "number",
+            "title": "Other Incomes",
+            "titleEs": "Otros Ingresos"
+          },
+          "FLAG_VISA": {
+            "type": "options",
+            "title": "Has Visa Card",
+            "titleEs": "Tiene Tarjeta Visa",
+            "enum": [0, 1],
+            "enumFace": ["No", "Yes"],
+            "enumFaceEs": ["No", "Si"]
+
+          },
+          "FLAG_MASTERCARD": {
+            "type": "options",
+            "title": "Has Mastercard",
+            "titleEs": "Tiene Tarjeta Mastercard",
+            "enum": [0, 1],
+            "enumFace": ["No", "Yes"],
+            "enumFaceEs": ["No", "Si"]
+
+          },
+          "FLAG_DINERS": {
+            "type": "options",
+            "title": "Has Diners Card",
+            "titleEs": "Tiene Tarjeta Diners",
+            "enum": [0, 1],
+            "enumFace": ["No", "Yes"],
+            "enumFaceEs": ["No", "Si"]
+
+        },
+        "FLAG_AMERICAN_EXPRESS": {
+            "type": "options",
+            "title": "Has American Express Card",
+            "titleEs": "Tiene Tarjeta American Express",
+            "enum": [0, 1],
+            "enumFace": ["No", "Yes"],
+            "enumFaceEs": ["No", "Si"]
+            },
+            "FLAG_OTHER_CARDS": {
+            "type": "options",
+            "title": "Has Other Cards",
+            "titleEs": "Tiene Otras Tarjetas",
+            "enum": [0, 1,"NULL"],
+            "enumFace": ["No", "Yes","Null"],
+            "enumFaceEs": ["No", "Si","Null"]
+            },
+            "QUANT_BANKING_ACCOUNTS": {
+            "type": "options",
+            "title": "Number of Banking Accounts",
+            "titleEs": "Cantidad de Cuentas Bancarias",
+            "enum": [
+            0,
+            1,
+            2
+            ]
+            ,
+            "enumFace": [
+            0,
+            1,
+            2
+            ]
+            ,
+            "enumFaceEs": [
+            0,
+            1,
+            2
+            ]
+            },
+            "QUANT_SPECIAL_BANKING_ACCOUNTS": {
+            "type": "options",
+            "title": "Number of Special Banking Accounts",
+            "titleEs": "Cantidad de Cuentas Bancarias Especiales",
+            "enum": [
+            0,
+            1,
+            2
+            ]
+            ,
+            "enumFace": [
+            0,
+            1,
+            2
+            ]
+            ,
+            "enumFaceEs": [
+            0,
+            1,
+            2
+            ]
+            },
+            "PERSONAL_ASSETS_VALUE": {
+            "type": "number",
+            "title": "Value of Personal Assets",
+            "titleEs": "Valor de los Bienes Personales"
+            },
+            "QUANT_CARS": {
+            "type": "number",
+            "title": "Number of Cars",
+            "titleEs": "Cantidad de Autos"
+            },
+            "COMPANY": {
+            "type": "options",
+            "title": "Has Company",
+            "titleEs": "Tiene Empresa",
+            "enum": ["Y", "N"],
+            "enumFace": ["No", "Yes"],
+            "enumFaceEs": ["No", "Si"]
+            },
+            "FLAG_PROFESSIONAL_PHONE": {
+            "type": "options",
+            "title": "Has Professional Phone",
+            "titleEs": "Tiene Teléfono Profesional",
+            "enum": ["N", "Y"],
+            "enumFace": ["No", "Yes"],
+            "enumFaceEs": ["No", "Si"]
+            },
+            "PROFESSIONAL_PHONE_AREA_CODE": {
+            "type": "text",
+            "titleEs": "Código de Área del Teléfono Profesional",
+            "title": "Professional Phone Area Code"
+            },
+            "MONTHS_IN_THE_JOB": {
+            "type": "number",
+            "titleEs": "Meses en el Trabajo Actual",
+            "title": "Months in Current Job"
+            },
+            "PROFESSION_CODE": {
+            "type": "number",
+            "titleEs": "Código de Profesión",
+            "title": "Profession Code"
+            },
+            "OCCUPATION_TYPE": {
+            "type": "options",
+            "titleEs": "Tipo de Ocupación",
+            "title": "Occupation Type",
+            "enum": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            "NULL"
+            ],
+            "enumFace": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            "NULL"
+            ],
+            "enumFaceEs": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            "NULL"
+            ]
+            },
+        "FLAG_HOME_ADDRESS_DOCUMENT": {
+            "type": "options",
+            "titleEs": "Tiene Documento de Confirmación domiciliario",
+            "title": "Has confirmation code of home adress",
+            "enum": [0, 1],
+            "enumFace": ["No", "Yes"],
+            "enumFaceEs": ["No", "Si"]
+        },
+        "FLAG_RG": {
+            "type": "options",
+            "titleEs": "Tiene Documento de Confirmación de Identidad",
+            "title":"Has confirmation code of Identity documentation",
+            "enum": [0, 1],
+            "enumFace": ["No", "Yes"],
+            "enumFaceEs": ["No", "Si"]
+        },
+        "FLAG_CPF": {
+            "type": "options",
+            "titleEs": "Tiene Documento de Confirmación de CPF",
+            "title":"Has CPF document confirmation",
+            "enum": [0, 1],
+            "enumFace": ["No", "Yes"],
+            "enumFaceEs": ["No", "Si"]
+        },
+        "FLAG_INCOME_PROOF": {
+            "type": "options",
+            "titleEs": "Tiene Documento de Confirmación de Ingresos",
+            "title": "Has Income confirmation documentation",
+            "enum": [0, 1],
+            "enumFace": ["No", "Yes"],
+            "enumFaceEs": ["No", "Si"]
+        },
+        "PRODUCT": {
+            "type": "options",
+            "titleEs": "Tipo de Producto de Crédito",
+            "title":"Credit Product type",
+            "enum": [
+                1,
+                2,7
+            ],
+            "enumFace": [
+                1,
+                2,7
+            ],
+            "enumFaceEs": [
+                1,
+                2,7
+            ]
+        },
+        "AGE": {
+            "type": "number",
+            "titleEs": "Edad",
+            "title" : "Age"
+        },
+        "TARGET_LABEL_BAD":{
+            "type": "options",
+            "titleEs": "Variable Objetivo",
+            "title":"Objective Variable",
+            "enum": [0, 1],
+            "enumFace": ["Good", "Bad"],
+            "enumFaceEs": ["Bueno", "Malo"]
+        }
+    }
+}
